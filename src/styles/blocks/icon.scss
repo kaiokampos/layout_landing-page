@@ -1,19 +1,32 @@
-// #region icon
 .icon {
   display: block;
-  height: 24px;
-  width: 24px;
-}
 
-.icon--phone {
-  background-image: url(../images/icons/icon-phone-call.png);
-}
+  height: $icon-size-small;
+  width: $icon-size-small;
 
-.icon--menu {
-  background-image: url(../images/icons/icon-burger-menu.png);
-}
+  background-size: cover;
+  background-position: center;
 
-.icon--close {
-  background-image: url(../images/icons/icon-close.png);
+  @include hover(transform, scale(1.2));
+
+  @include on-tablet {
+    height: $icon-size-big;
+    width: $icon-size-big;
+  }
+
+  &--phone {
+    background-image: url(../images/icons/icon-phone.svg);
+  }
+
+  &--menu {
+    background-image: url(../images/icons/icon-burger-menu.svg);
+
+    &:hover {
+      background-image: url(../images/icons/icon-burger-menu-hover.svg);
+    }
+  }
+
+  &--close {
+    background-image: url(../images/icons/icon-close.svg);
+  }
 }
-// #endregion
