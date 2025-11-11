@@ -9,9 +9,9 @@
 
   height: 100vh;
 
-  background-image: url('../images/header-bg.png');
+  background-image: url(../images/header-bg.png);
   background-size: cover;
-  background-position: 87%;
+  background-position: 86%;
   background-repeat: no-repeat;
 
   @include on-tablet {
